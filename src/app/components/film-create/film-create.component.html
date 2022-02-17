@@ -1,0 +1,9 @@
+<h1>Création de Film</h1>
+<!-- ALLER DANS APP MODULE POUR DRE QU4ON FAIT FORM AVANCÉ -->
+<form [formGroup]="myFormulaire" (ngSubmit)="save()">
+    <label for="titre">Titre :</label>
+    <input type="text" formControlName="titre" id="titre">
+    <label for="date">Date de Sortie :</label>
+    <input type="date" formControlName="date" id="date">
+    <input type="submit">
+</form>

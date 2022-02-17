@@ -1,0 +1,14 @@
+<h1>Liste de mes films favoris</h1>
+<ng-container *ngIf="films.length > 0">
+    <ul>
+        <li *ngFor="let film of films">
+            <a [routerLink]="'/details/'+film.reference">
+                <div>{{film.titre}}</div>
+            </a>
+        </li>
+    </ul>
+</ng-container>
+
+<ng-container *ngIf="films.length <= 0">
+    <p>Pas de film pour le moment dans la liste...</p>
+</ng-container>
